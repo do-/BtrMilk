@@ -1,0 +1,54 @@
+/*@hue-table: 216;*/
+
+.drw.table {
+
+	div.toolbar {
+	
+		display: flex;
+		height: 35px;
+		line-height: 35px;
+		border: 0px;
+		padding-left:7px;
+		background: linear-gradient(
+			hsl(@hue-table,  8%, 47%) 0px, 
+			hsl(@hue-table, 13%, 63%) 1px, 
+			hsl(@hue-table, 21%, 73%) 2px,
+			hsl(@hue-table, 27%, 78%) 3px,
+			hsl(@hue-table, 27%, 78%) 33px,
+			hsl(@hue-table, 29%, 82%) 34px,
+			hsl(@hue-table, 19%, 62%) 35px
+		);
+		
+		.thing () {
+			height: 22px;
+			margin-top: 7px;
+			margin-right: 9px;
+		}
+		
+
+		button {
+			.thing ();
+			background: hsl(@hue-table, 20%, 65%);
+			border-bottom: solid 1px hsl(@hue-table, 27%, 87%);
+		}
+
+		.widget {
+			.thing ();
+			
+			span:after {
+				content: ": ";
+			}
+			
+			input, select {
+				margin-top: 1px;
+			}
+
+			select {
+				height: 19px;
+			}
+			
+		}
+
+	}
+	
+}
