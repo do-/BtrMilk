@@ -1,0 +1,43 @@
+.drw {
+
+	button {
+		outline: none;
+		border-radius: 7px;
+		border: 0px;
+		white-space: nowrap;
+	}
+
+	button:not(.clickable) {
+		opacity: 0.5
+	}
+
+	button.icon:before {
+		content: " ";
+		height: 16px;
+		width: 16px;
+		float: left;
+		margin: -2px 7px 0px 1px;
+		background:transparent url(btn.png) no-repeat;
+	}
+
+	button.icon.close:before    { background-position: -16px -0px }
+	button.icon.cancel:before   { background-position: -16px -0px }
+	button.icon.ok:before       { background-position: -32px -0px }
+	button.icon.copy:before     { background-position: -48px -0px }
+
+	button.icon.create:before   { background-position: -0px  -16px }
+	button.icon.delete:before   { background-position: -16px -16px }
+	button.icon.edit:before     { background-position: -32px -16px }
+	button.icon.left:before     { background-position: -48px -16px }
+
+	button.icon.notify:before   { background-position: -0px  -32px }
+	button.icon.options:before  { background-position: -16px -32px }
+	button.icon.print:before    { background-position: -32px -32px }
+	button.icon.undelete:before { background-position: -48px -32px }
+
+	button.icon.tv_0:before     { background-position: -0px  -48px }
+	button.icon.tv_1:before     { background-position: -16px -48px }
+	button.icon.calendar:before { background-position: -32px -48px }
+	button.icon.right:before    { background-position: -48px -48px }
+
+}
