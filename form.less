@@ -79,7 +79,7 @@
 			border:solid 1px hsl(@hue-form, 9%, 82%);
 			padding: 5px 10px;
 		}
-
+		
 		th {
 			.tdh();
 			background: hsl(0, 0%, 93%);
@@ -130,14 +130,10 @@
 
 	}
 	
-	div.toolbar {
+	.bar() {
 		height: 38px;
 		border: 0px;
-		border-top: solid hsl(@hue-form, 5%, 62%) 1px;
-		margin-top: 3px;
-		display: flex;
-		justify-content: center;
-		
+		border-top: solid hsl(@hue-form, 5%, 62%) 1px;		
 		background: linear-gradient(
 			hsl(@hue-table, 21%, 73%) 0px,
 			hsl(@hue-table, 27%, 78%) 3px,
@@ -145,7 +141,23 @@
 			hsl(@hue-table, 29%, 82%) 37px,
 			hsl(@hue-table, 19%, 62%) 38px
 		);
-		
+
+	}
+
+	header {	
+		.bar();
+		padding-left: 20px;
+		color: #fff;
+		font-size: 18px;
+	}
+	
+	div.toolbar {
+	
+		.bar();
+		margin-top: 3px;
+		display: flex;
+		justify-content: center;
+				
 		button {
 			height: 25px;
 			margin: 6px 3px 0px 3px;
