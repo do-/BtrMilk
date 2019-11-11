@@ -1,3 +1,19 @@
+.color-inputs() {
+
+	input:not([disabled]) {
+
+		&[required]:placeholder-shown {
+			background-color: #ffd;
+		}
+
+		&:not(:placeholder-shown):invalid {
+			background-color: #fee;
+		}
+
+	}
+	
+}
+
 .drw.popup-form {
 
 	.font () {
@@ -27,47 +43,13 @@
 		padding: 5px;
 		color: #555;
 	}
+	
+	.color-inputs();	
 
 }
 
 .drw.form {
-/*
-	nav {
-		height: 33px;
-		border: 0px;
-		display: flex;
-		justify-content: flex-end;
-		background: linear-gradient(
-			hsl(@hue-nav, 11%, 33%) 0px, 
-			hsl(@hue-nav, 11%, 45%) 1px, 
-			hsl(@hue-nav, 12%, 52%) 2px,
-			hsl(@hue-nav, 14%, 55%) 3px,
-			hsl(@hue-nav, 14%, 55%) 31px,
-			hsl(@hue-nav, 11%, 50%) 32px,
-			hsl(@hue-nav, 11%, 45%) 33px
-		);	
-		border-bottom: solid 8px white;
 
-		button {
-			height: 22px;
-			margin: 11px 4px 0px 0px;
-			border-radius: 7px 7px 0px 0px;
-			border: 0px;			
-			background: linear-gradient(
-				hsl(@hue-nav, 15%, 94%) 0px, 
-				hsl(@hue-nav, 14%, 80%) 20px,
-				hsl(@hue-nav,  9%, 72%) 21px,
-				hsl(@hue-nav,  6%, 63%) 22px
-			);
-
-		}
-
-		button.active {
-			background: white;
-		}
-
-	}
-*/	
 	table {
 
 		width: 100%;
@@ -100,14 +82,8 @@
 				padding-left: 3px;
 				padding-right: 3px;
 			}
-
-			input[required] {			
-				background-color: #ffffaa;
-			}
-
-			input:invalid {			
-				background-color: #ffcccc;
-			}
+			
+			.color-inputs();
 
 		}
 
