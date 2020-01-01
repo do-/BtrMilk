@@ -19,7 +19,7 @@
 	div.toolbar {
 	
 		display: flex;
-		height: 35px;
+		height: 40px;
 		line-height: 35px;
 		border: 0px;
 		padding-left:7px;
@@ -28,26 +28,22 @@
 			hsl(@hue-table, 13%, 63%) 1px, 
 			hsl(@hue-table, 21%, 73%) 2px,
 			hsl(@hue-table, 27%, 78%) 3px,
-			hsl(@hue-table, 27%, 78%) 33px,
-			hsl(@hue-table, 29%, 82%) 34px,
-			hsl(@hue-table, 19%, 62%) 35px
+			hsl(@hue-table, 27%, 78%) 38px,
+			hsl(@hue-table, 29%, 82%) 39px,
+			hsl(@hue-table, 19%, 62%) 40px
 		);
 		
 		.thing () {
-			height: 22px;
-			margin-top: 7px;
+			font-family: Arial,sans-serif;
+			font-size: 12px;
+			height: 26px;
+			margin-top: 8px;
 			margin-right: 9px;
 		}
-		
 
 		button {
 			.thing ();
-			background: linear-gradient(
-				#eeeeee 0px, 
-				#eeeeee 10px, 
-				#e9e9e9 11px, 
-				#e9e9e9 22px
-			);
+			background: hsl(@hue-table, 10%, 92%);
 			color: #555;
 			border-bottom: solid 1px hsl(@hue-table, 27%, 87%);
 		}
